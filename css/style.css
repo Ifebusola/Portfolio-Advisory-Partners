@@ -30,19 +30,16 @@ h2 > span {
     font-size: 1.3em;
     font-weight: bold;
 }
-/* Reduced the font here by 0.2em */
 h3 {
     font-size: 4em;
     font-weight: bold;
 }
-/* Reduced the margin here by 2% */
 .hello {
-    margin-top: 18%;
+    margin-top: 15%;
 }
-/*reduced the margin here by 5% */
 p {
     font-size: 1.4em;
-    margin-top: 25%;
+    margin-top: 20%;
 }
 a {
     text-decoration: none;
