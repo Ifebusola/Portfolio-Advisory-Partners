@@ -1,125 +1,202 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/* Custom Styles */
+
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
     background: url('../img/bg.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     color: #F2F2F2;
 
 }
-.right {
-    margin-left: 50%;
-}
-header {
-    margin-top: 5%;
-}
+
+
+
+
 h1 {
-    font-size: 1.4em;
+    font-size: 1.6rem;
     font-weight: 100;
+    margin-bottom: 10px;
 }
 h1 > span {
-    font-size: 1.5em;
-    font-weight: bold;
+    font-size: 2.1rem;
+    font-weight: normal;
 }
-h2 {
-    font-size: 1.2em;
+.site__title p {
+    font-size: 1.4rem;
     font-weight: 100;
 }
-h2 > span {
-    font-size: 1.3em;
-    font-weight: bold;
+.site__title p > span {
+    font-size: 1.8rem;
+    font-weight: normal;
 }
-h3 {
+.hello {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+.site__footer {
+    font-size: 1.4rem;
+}
+
+
+
+
+.container {
+    height: 100vh;
+    padding: 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.site__title,
+.site__body,
+.site__footer {
+    width: 100%;
+}
+
+.site__title {
+
+}
+
+
+.site__body {
     font-size: 4em;
     font-weight: bold;
 }
-.hello {
-    margin-top: 15%;
-}
-p {
-    font-size: 1.4em;
-    margin-top: 20%;
-}
-a {
+
+.site__footer a {
     text-decoration: none;
     color: #F2C94C;
 }
-@media only screen and (max-width: 768px) {
-    .right {
-        margin-left: 5%;
-        margin-right: 5%
-    }
-    
-    header {
-        margin-top: 3%;
-    }
-    h1 {
-        font-size: 1em;
-        font-weight: 100;
-    }
-    h1 > span {
-        font-size: 1.2em;
-        font-weight: normal;
-    }
-    h2 {
-        font-size: 0.9em;
-        font-weight: 100;
-    }
-    h2 > span {
-        font-size: 1.2em;
-        font-weight: normal;
-    }
-    h3 {
-        font-size: 2.6em;
-        font-weight: normal;
-    }
-    .hello {
-        margin-top: 30%;
-    }
-    p {
-        font-size: 1.2em;
-        margin-top: 40%;
-    }
-    
-}
-@media only screen
-    and (max-width: 320px) {
-        
-    .right {
-        margin-left: 5%;
-        margin-right: 5%
-    }
-    
-    header {
-        margin-top: 3%;
-    }
-    h1 {
-        font-size: 1em;
-        font-weight: 100;
-    }
-    h1 > span {
-        font-size: 1.3em;
-        font-weight: normal;
-    }
-    h2 {
-        font-size: 0.8em;
-        font-weight: 100;
-    }
-    h2 > span {
-        font-size: 1.2em;
-        font-weight: normal;
-    }
-    h3 {
-        font-size: 2.2em;
-        font-weight: normal;
-    }
-    .hello {
-        margin-top: 20%;
-    }
-    p {
-        font-size: 0.9em;
-        margin-top: 35%;
+
+@media screen and (min-width: 500px) {
+
+    .container {
+        padding: 40px;
     }
 
+
+    h1 {
+        font-size: 1.9rem;
+    }
+    h1 > span {
+        font-size: 2.3rem;
+    }
+    .site__title p {
+        font-size: 1.6rem;
+    }
+    .site__title p > span {
+        font-size: 2rem;
+    }
+    .hello {
+        font-size: 4.5rem;
+    }
+
+
+
 }
+
+
+
+@media screen and (min-width: 800px) {
+
+    .site__title,
+    .site__body,
+    .site__footer {
+        width: 50%;
+    }
+
+
+    h1 {
+        font-size: 2.1rem;
+    }
+    h1 > span {
+        font-size: 2.6rem;
+    }
+    .site__title p {
+        font-size: 1.6rem;
+    }
+    .site__title p > span {
+        font-size: 2rem;
+    }
+    .hello {
+        font-size: 5rem;
+    }
+
+    .site__footer {
+        font-size: 1.6rem;
+    }
+
+
+}
+
